@@ -2,7 +2,7 @@
 
 # 🚀 Tap to Build
 
-### *Build Beautiful Landing Pages in Minutes*
+### *Master Web Development Through Hands-On Practice*
 
 <img src="Frontend/assets/output.gif" width="700" alt="Tap to Build Demo">
 
@@ -17,12 +17,45 @@
 
 ## 📖 About
 
-**Tap to Build** is an intuitive, browser-based platform that empowers small businesses to create professional landing pages without any coding knowledge. Through a seamless multi-step workflow, users can design, customize, and deploy their web presence in minutes.
+**Tap to Build** is the practical training platform of the **Refqa** ecosystem—where learning meets real-world application. After mastering web development concepts through Refqa's educational features, users transition here to apply their knowledge by building real landing pages for small businesses.
 
-> 🎓 **Graduation Project Note**  
-> This web platform is part of our graduation project. The complete project includes:
-> - **Tap to Build** (Web Platform) - *Built by me [@Narjes-almasri] & [Friend's Name]*
-> - **Refqa** (Mobile App) - *Built by [Colleague 1], [Colleague 2], [Colleague 3]*
+This hands-on approach bridges the gap between theory and practice, allowing learners to create professional web projects while reinforcing core web development concepts.
+
+> 🎓 **Graduation Project**  
+> **Refqa** is our comprehensive educational platform graduation project consisting of two integrated components:
+> 
+> ### 📱 **Refqa Mobile App** - *The Learning Hub*
+> An educational platform featuring:
+> - 🎯 Interactive learning paths & completions
+> - 🏆 Ranking system & gamification
+> - 👥 Community features - connect with fellow learners
+> - 🌍 Build your learning society
+> - 🔗 Seamless navigation to Tap to Build (integration in progress)
+> 
+> **Built by:** [@Amr-alali](https://github.com/AmrHAlali)
+> 
+> ### 🌐 **Tap to Build** - *The Training Ground*
+> A web platform for learning core web concepts and understanding page structure.
+> 
+> **Built by:** [@Narjes-almasri](https://github.com/Narjes-almasri) & [@leen-almahthi](https://github.com/LeenAlmahthi)
+> 
+> ### 🔧 **Backend Infrastructure**
+> Unified database and API services powering both platforms.
+> 
+> **Built by:** [Mahmoud-zabout]
+
+---
+
+## 🎯 Purpose & Vision
+
+**Tap to Build** serves as the practical training extension of Refqa's educational experience:
+
+1. **📚 Learn** core web concepts in the Refqa mobile app
+2. **🛠️ Practice** by building real projects in Tap to Build
+3. **🚀 Deploy** professional landing pages for actual businesses
+4. **🎓 Master** web development through hands-on experience
+
+This creates a complete learning-to-earning pipeline for aspiring web developers.
 
 ---
 
@@ -32,15 +65,16 @@
 <tr>
 <td width="50%">
 
-### 🎨 **Intuitive Builder**
+### 🎨 **Hands-On Builder**
 - Step-by-step guided workflow
 - Real-time preview as you build
-- No coding required
+- Apply concepts learned in Refqa
+- No-code friendly interface
 
-### 🔐 **Secure Authentication**
+### 🔐 **Secure Platform**
 - Bcrypt password hashing
 - Session management
-- Admin dashboard access
+- Integrated with Refqa ecosystem
 
 </td>
 <td width="50%">
@@ -49,11 +83,12 @@
 - Color palette selection
 - Logo creation & upload
 - Content editing tools
+- Professional templates
 
-### 📊 **Admin Tools**
+### 📊 **Progress Tracking**
 - Site management dashboard
-- Evaluation system
-- Analytics overview
+- Project evaluation system
+- Learning analytics (via Refqa)
 
 </td>
 </tr>
@@ -64,9 +99,9 @@
 ## 🎬 See It In Action
 
 <div align="center">
-<img src="Frontend/assets/nar.gif" width="700" alt="Final Result Showcase">
+<img src="Frontend/assets/output2.gif" width="700" alt="Final Result Showcase">
 
-*From idea to live website in just a few clicks*
+*From learning concepts to building real websites*
 
 </div>
 
@@ -80,6 +115,7 @@
 - **npm** (comes with Node.js)
 
 ### Installation
+
 ```bash
 # Navigate to backend directory
 cd Backend
@@ -96,6 +132,7 @@ npm start
 ---
 
 ## 📂 Project Structure
+
 ```
 Tap-to-Build/
 ├── 🎨 Frontend/
@@ -138,6 +175,7 @@ Tap-to-Build/
 
 #### **POST** `/api/signup`
 Create a new user account
+
 ```json
 {
   "name": "John Doe",
@@ -148,6 +186,7 @@ Create a new user account
 
 #### **POST** `/api/login`
 Authenticate existing user
+
 ```json
 {
   "email": "john@example.com",
@@ -167,6 +206,7 @@ Submit complete site configuration (validated against JSON schema)
 The builder automatically saves your progress in the browser's session storage. Our data collector seamlessly aggregates everything into a single configuration.
 
 ### Usage Example
+
 ```javascript
 // Collect all session data
 const siteData = SiteDataCollector.collectAllData();
@@ -197,6 +237,7 @@ SiteDataCollector.downloadAsJSON();
 ## ✅ Validation & Testing
 
 Run schema validation against example configurations:
+
 ```bash
 cd Backend
 npm run validate
@@ -252,6 +293,7 @@ Simply point your hosting service to the `Frontend/` directory.
 ### Development Mode
 
 CORS is configured for open access during development. To prepare for production:
+
 ```javascript
 // In Backend/server.js
 app.use(cors({
@@ -266,10 +308,23 @@ If remote auth endpoints are unavailable, the app automatically falls back to lo
 
 ---
 
+## 🔄 Integration with Refqa
+
+> **Note:** Navigation from the Refqa mobile app to Tap to Build is currently in development. Once complete, users will be able to seamlessly transition from learning modules to practical projects.
+
+**Planned Features:**
+- Single sign-on between platforms
+- Progress synchronization
+- Unified learning path tracking
+- Achievement system integration
+
+---
+
 ## 🛠️ Troubleshooting
 
 <details>
 <summary><strong>Port already in use</strong></summary>
+
 ```bash
 # Kill process on port 3000
 npx kill-port 3000
@@ -295,29 +350,70 @@ Ensure `sessionStorage` is enabled in your browser and not in private/incognito 
 
 ## 👥 Team
 
+<div align="center">
+
+### 🎓 Graduation Project Contributors
+
+</div>
+
 <table>
 <tr>
-<td align="center">
-<strong>🌐 Tap to Build (Web Platform)</strong><br>
-Built by <a href="#">[Your Name]</a> & <a href="#">[Friend's Name]</a>
+<td align="center" width="33%">
+<br>
+<strong>📱 Refqa Mobile App</strong><br><br>
+<em>Educational Platform Development</em><br>
+<sub>Learning paths, rankings, community features</sub><br><br>
+👤 <a href="https://github.com/colleague-username"><strong>Colleague Name</strong></a>
+<br><br>
 </td>
-</tr>
-<tr>
-<td align="center">
-<strong>📱 Refqa (Mobile App)</strong><br>
-Built by <a href="#">[Colleague 1]</a>, <a href="#">[Colleague 2]</a>, <a href="#">[Colleague 3]</a>
+<td align="center" width="33%">
+<br>
+<strong>🌐 Tap to Build</strong><br><br>
+<em>Web Training Platform</em><br>
+<sub>Hands-on builder, templates, live preview</sub><br><br>
+👥 <a href="https://github.com/Narjes-almasri"><strong>Narjes Almasri</strong></a> & <a href="https://github.com/friend-username"><strong>Friend Name</strong></a>
+<br><br>
+</td>
+<td align="center" width="33%">
+<br>
+<strong>🔧 Backend Infrastructure</strong><br><br>
+<em>Database & API Development</em><br>
+<sub>Unified backend for both platforms</sub><br><br>
+👤 <a href="https://github.com/backend-username"><strong>Backend Dev Name</strong></a>
+<br><br>
 </td>
 </tr>
 </table>
 
 ---
 
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
 ## 🙏 Acknowledgments
 
 Special thanks to:
-- Our advisors and professors
-- The entire graduation project team
+- Our project advisors and professors for their guidance
+- The entire Refqa team for the collaborative spirit
+- Beta testers who provided valuable feedback
 - Everyone who supported us throughout this journey
+
+---
+
+## 🗺️ Project Roadmap
+
+- [x] Core builder functionality
+- [x] Authentication system
+- [x] Admin dashboard
+- [x] Schema validation
+- [ ] Full Refqa app integration
+- [ ] Single sign-on implementation
+- [ ] Advanced template library
+- [ ] Deployment automation
+- [ ] Multi-language support
 
 ---
 
@@ -325,8 +421,10 @@ Special thanks to:
 
 ### ⭐ If you like this project, please consider giving it a star!
 
-**Made with ❤️ for our graduation project**
+**Made with ❤️ as part of the Refqa educational ecosystem**
 
-[Report Bug](https://github.com/yourusername/tap-to-build/issues) • [Request Feature](https://github.com/yourusername/tap-to-build/issues)
+*Empowering learners to become creators*
+
+[Report Bug](https://github.com/Narjes-almasri/finaaal-/issues) • [Request Feature](https://github.com/Narjes-almasri/finaaal-/issues)
 
 </div>
